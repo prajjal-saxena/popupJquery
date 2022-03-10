@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 a:hover{
     text-decoration: none;
+    color: #000;
 }
 body
 {
@@ -1467,40 +1468,60 @@ div#day-school{
     width: 100%;
 }
 /*PARTICULAR SCHOOL DETAILS */
+.h2-font-scl-detail{
+    font-size: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid black;
+}
+.key-info-h1-font{
+    font-size: 15px;
+    font-weight: 600;
+}
 .sch-name-contact{
     display: flex;
 }
 #B_N_scl{
-    width: 75%;
-    margin-right: 22px;
-}
-#B_N_scl h2{
+    width: 100%;
+    margin-right: 0;
+
     border-radius: 12px;
     background: #f2f0f1;
     box-shadow: 0 0 4px 0 #aaa;
-  
+    padding: 20px;
+    margin: 36px 0 10px 0;
+    font-size: 24px;
+}
+#B_N_scl h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+#B_N_scl p{
+    font-size: 15px;
+    margin-bottom: 0px;
 }
 .sch-contact-us{
     /* border: 1px solid black; */
     height: 100%;
-    padding: 7px 13px;
+    padding: 20px;
     border-radius: 12px;
     background: #f2f0f1;
     box-shadow: 0 0 4px 0 #aaa;
-    width: 54%;
+    width: 25%;
+    margin: 36px 0 0 50px;
+    line-height: 12px;
 }
-.par-sch-detail{
-    display: flex;
-    /* border: 1px solid black; */
-    justify-content: space-between;
+.sch-contact-us h2{
+    font-size: 22px;
 }
+
 .key-information{
     /* border: 1px solid black; */
-    padding: 5px 53px;
+    padding: 20px;
     border-radius: 4px;
     background: #f2f0f1;
     box-shadow: 0 0 4px 0 #aaa;
-    width: 74%;
+    width: 100%;
+    margin-top: 1rem;
 }
 .key-information:hover{
     box-shadow: 0 0 18px 0 #aaa;    
@@ -1508,20 +1529,17 @@ div#day-school{
 #key-info-sch{
     display: flex;
     justify-content: space-between;
+    line-height: 1;
 }
 .particular-school h2{
-    font-size: 25px;
-    font-weight: 600;
-    margin: 35px 0 18px 0;
     color: #3652A2;
 }
 .par-sch-detail h2{
-    font-size: 25px;
     margin-bottom: 2rem;
     text-align: left;
 }
 .key-info-sch-font{
-    font-size: 18px;
+  
 }
 .key-info-sch2{
     margin-left: 135px;
@@ -1529,31 +1547,41 @@ div#day-school{
 
 /* FAQs */
 .faq{
-    box-shadow: 0 0 4px 0 #aaa; 
-    background: #f2f0f1;  
-    padding: 5px 53px;
-    width: 74%;
-    margin: 20px 0 15px 0;   
+    box-shadow: 0 0 4px 0 #aaa;
+    background: #f2f0f1;
+    padding: 20px;
+    width: 100%;
+    margin-top: 1rem;
 }
+.faq:hover{
+    box-shadow: 0 0 15px 0 #aaa;    
+}
+
 .faq:hover{
     box-shadow: 0 0 15px 0 #aaa;    
 }
 
 /* FEE DETAIL */
 .fee-details{
-    box-shadow: 0 0 4px 0 #aaa; 
-    background: #f2f0f1;  
-    padding: 5px 53px;
-    width: 74%;
-    margin: 20px 0 15px 0;       
+    box-shadow: 0 0 4px 0 #aaa;
+    background: #f2f0f1;
+    padding: 20px;
+    width: 100%;
+    margin-top: 1rem;  
+    line-height: 8px; 
 }
-.faq:hover{
-    box-shadow: 0 0 15px 0 #aaa;    
+.fee-details:hover{
+    box-shadow: 0 0 15px 0 #aaa;
 }
 
 /* REVIEW RATING */
+.review-head-btn h2{
+    font-weight: 600;
+    font-size: 24px;
+}
 .recent-reviews{
-    margin-top: 65px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .review-head-btn{
     display: flex;
@@ -1563,7 +1591,7 @@ div#day-school{
     padding-right: 135px;
 }
 .recent-rev-rating{
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
 }
 .recent-reviews h2{
     margin: 0 0 0 0;
@@ -1571,10 +1599,10 @@ div#day-school{
 .person-reviews{
     box-shadow: 0 0 4px 0 #aaa; 
     background: #f2f0f1;  
-    padding: 5px 53px;
-    width: 74%;
+    padding: 20px;
+    width: 100%;
     margin: 20px 0 15px 0;
-    border-radius: 25px;    
+    border-radius: 4px;
 }
 .head-btn-rating{
     width: 100%;
@@ -1604,6 +1632,9 @@ div#day-school{
     padding: 10px 50px;
     overflow: hidden;
     display: none;
+}
+.detail-left{
+    flex: 1 1;
 }
 
 .popup-overlay{ position: fixed;width: 100%;height: 100%;top: 0;left: 0;max-width: 100%;margin: auto;right: 0;bottom: 0;background: rgba(0,0,0,.5);z-index: 99;display: none}
